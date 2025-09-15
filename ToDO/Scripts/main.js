@@ -25,11 +25,21 @@ let taskArray = []
             button.addEventListener("click", function (e){
 
                 console.log("Deleted task " + text.textContent)
-                list.remove(li)
+                list.removeChild(li)
+                deleteTask(textD)
 
             })
 
             input.value = "";
+
+    }
+
+    function deleteTask(text){
+
+        const index = taskArray.findIndex((x) => x === text);
+        console.log(index)
+        taskArray.splice(index, 1)
+        localStorage.setItem("task", JSON.stringify(taskArray))
 
     }
 

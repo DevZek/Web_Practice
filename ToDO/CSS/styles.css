@@ -4,3 +4,8 @@ main {
     justify-content: center;
     padding-top: 10rem;
 }
+
+body {
+    color: white;
+    background-color: black;
+}
