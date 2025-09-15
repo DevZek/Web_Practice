@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
     <title>To do app</title>
 </head>
 <body>
-    
+    <main>
+        <div>
+            <form action="" method="post" id="todoForm">
+                <label for="task">Task to do:</label>
+                <input type="text" id="task" name="task">
+                <input type="submit" value="Add task">
+            </form>
+        </div>
+        <div id="taskList">
+            <h2>Tasks to do</h2>
+        </div>
+    </main>
 <script src="Scripts/main.js"></script>
 </body>
 </html>
