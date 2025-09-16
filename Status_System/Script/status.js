@@ -11,6 +11,7 @@ statUp.addEventListener("click", function(e){
     updateStatus(index, randomAmount);
     displayStatus();
 
+    console.log(statArray)
 })
 
 displayStatus();
